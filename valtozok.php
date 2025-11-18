@@ -268,19 +268,6 @@ else echo "Nincs benne szám";
 
 ?>
 
-<hr>
-
-
-
-
-
-
-
-
-
-
-
-
-    
+<hr> 
 </body>
 </html>
