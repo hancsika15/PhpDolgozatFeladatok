@@ -45,8 +45,6 @@ $y = 7;
 echo "x: 5; y: 7";
 echo "<br>";
 echo $x * $y;
-
-
 ?>
 
 <hr>
@@ -93,7 +91,7 @@ echo strlen($szoveg);
 $szam = 5;
 echo $szam;
 echo "<br>";
-echo (string)$szam;
+echo strval($szam);
 
 
 ?>
@@ -105,7 +103,7 @@ echo (string)$szam;
 $string = "Hello";
 echo $string;
 echo "<br>";
-echo (int)$string;
+echo intval($string);
 
 ?>
 
@@ -219,7 +217,7 @@ echo $C*9/5+32;
 <?php
 $kor = 16;
 
-echo $kor > 18 
+echo $kor >= 18 
 ? "Idősebb mint 18."
 : "Fiatalabb mint 18";
 ?>
