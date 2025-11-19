@@ -342,11 +342,29 @@ echo $Info;
 <h4>99. Írj függvényt, amely eldönti, tartalmaz-e egy tömb egy adott értéket!</h4>
 <?php
 
+function Ertek($tomb){
+    return in_array(45,$tomb) ? "Igen" : "Nem";
+}
+
+$tomb = array(1,2,5,3,82,6,9,544,55,4);
+$Info = Ertek($tomb);
+echo $Info;
 ?>
 <hr>
 
 <h4>100. Írj függvényt, amely két tömböt összefűz egy harmadikba!</h4>
 <?php
+
+function Merge($tomb1, $tomb2){
+    $tomb3 = array_merge($tomb1,$tomb2);
+    return $tomb3;
+}
+
+$tomb1 = array(1,2,3,4,5);
+$tomb2 = array(6,7,8,9,10);
+$Info = Merge($tomb1, $tomb2);
+echo implode(", ", $Info); 
+
 ?>
 <hr>
 
